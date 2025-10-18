@@ -12,15 +12,18 @@
 
   <style>
     :root{
-      --bg:#faf7f2; /* crema suave */
-      --accent:#0f2f4b; /* azul profundo */
-      --gold:#c79a3a; /* dorado suave */
-      --muted:#6b6b6b;
-      --card:#ffffff;
-      --maxw:1100px;
-      --radius:12px;
-      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
+  --bg:#eaf3ff;          /* azul pastel cielo */
+  --accent:#0f2f4b;      /* azul profundo para títulos y botones */
+  --muted:#3b556b;       /* gris azulado para textos secundarios */
+  --card:#ffffff;
+  --maxw:1100px;
+  --radius:12px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}   /* Ajustes de contraste sobre fondo pastel */
+.badge{ background: rgba(255,255,255,0.9); color: var(--accent); }
+.btn.secondary{ background:#fff; color:var(--accent); border:2px solid rgba(15,47,75,0.16); }
+.card, .tile{ background:#fff; } /* mantiene tarjetas blancas nítidas */                                                                                             
+  
 
     html,body{height:100%;margin:0;background:var(--bg);color:var(--accent)}
     .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;}
