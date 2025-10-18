@@ -86,6 +86,25 @@
   .mockups img.mock{ width:100%; }
 }
 
+    /* Tipografía fluida */
+h1{ font-size: clamp(28px, 5vw, 44px); }
+p.lead{ font-size: clamp(15px, 1.8vw, 18px); }
+
+/* Asegurar imágenes siempre dentro del contenedor */
+img{ max-width:100%; height:auto; }
+
+/* Botones: a lo ancho en móviles */
+@media (max-width:600px){
+  .wrap{ padding: 20px; }
+  .cta-row .btn{ width:100%; text-align:center; }
+}
+
+/* Secciones en 1 columna en pantallas pequeñas (por si no se aplicó ya) */
+@media (max-width:700px){
+  .split{ grid-template-columns:1fr; }
+  .grid3{ grid-template-columns:1fr; }
+}
+
   </style>
 </head>
 <body>
