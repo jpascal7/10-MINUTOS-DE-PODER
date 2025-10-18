@@ -68,6 +68,17 @@
 
     /* small screens tweaks */
     .subtle{color:var(--muted);font-size:13px}
+    
+    /* Galería en el hero: portada + mockup */
+.mockups{ flex-wrap: wrap; } /* permite saltar de línea en pantallas pequeñas */
+.mockups img.portada{ width:220px; }
+.mockups img.mock{ width:420px; max-width:100%; }
+
+@media (max-width:900px){
+  .mockups{ flex-direction:column; }
+  .mockups img.portada{ width:60%; }
+  .mockups img.mock{ width:100%; }
+}
 
   </style>
 </head>
@@ -107,10 +118,10 @@
         <div class="card" aria-hidden="false">
           <!-- Mockup: reemplaza las rutas por tus imágenes reales -->
           <div class="mockups">
-            <img src="./portada.jpg" alt="Portada 10 Minutos style="width:220px">
-          </div>
-          <p class="subtle" style="margin-top:12px">Portada real — mockup editorial</p>
-        </div>
+  <img class="portada" src="./portada.jpg" alt="Portada 10 Minutos de Poder" loading="lazy">
+  <img class="mock" src="./mockup.png" alt="Mockup del libro en varios dispositivos" loading="lazy">
+</div>
+<p class="subtle" style="margin-top:12px">Portada y mockup editorial</p>
 
         <div class="card" style="padding:14px;">
           <p style="margin:0;font-weight:700">Autor: Jaime Pascal</p>
