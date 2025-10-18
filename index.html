@@ -80,6 +80,12 @@
   .mockups img.mock{ width:100%; }
 }
 
+    /* Tamaño del mockup en el hero */
+.mockups img.mock{ width:420px; max-width:100%; border-radius:12px; }
+@media (max-width:900px){
+  .mockups img.mock{ width:100%; }
+}
+
   </style>
 </head>
 <body>
@@ -118,10 +124,9 @@
         <div class="card" aria-hidden="false">
           <!-- Mockup: reemplaza las rutas por tus imágenes reales -->
           <div class="mockups">
-  <img class="portada" src="./portada.jpg" alt="Portada 10 Minutos de Poder" loading="lazy">
-  <img class="mock" src="./mockup.png" alt="Mockup del libro en varios dispositivos" loading="lazy">
+  <img class="mock" src="./mockup.png" alt="Mockup del libro 10 Minutos de Poder en varios formatos" loading="lazy">
 </div>
-<p class="subtle" style="margin-top:12px">Portada y mockup editorial</p>
+<p class="subtle" style="margin-top:12px">Mockup editorial del libro</p>
 
         <div class="card" style="padding:14px;">
           <p style="margin:0;font-weight:700">Autor: Jaime Pascal</p>
